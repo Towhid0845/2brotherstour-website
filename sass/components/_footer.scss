@@ -1,0 +1,150 @@
+@import "../variable/bgColor";
+@import "../variable/textColor";
+@import "../mixin/font";
+
+footer {
+  width: 100%;
+  background-color: $darkBgColor;
+  margin-top: 80px;
+  padding: 80px 0;
+
+  .about {
+    .logo {
+      padding-bottom: 15px;
+    }
+
+    .text {
+      p {
+        color: $white;
+        line-height: 26px;
+      }
+    }
+    ul{
+      padding-top: 20px;
+      li{
+        display: inline-block;
+        a{
+          width: 35px;
+          height: 35px;
+          background-color: #3E525F;
+          text-align: center;
+          line-height: 35px;
+          border-radius: 50%;
+          color: $white;
+          margin-right: 5px;
+          @include font(13px, 400);
+          transition: all linear .2s;
+          &:hover{
+            background-color: $themeBgColor !important;
+          }
+        }
+      }
+    }
+  }
+
+  .title {
+    padding-bottom: 30px;
+
+    h3 {
+      @include font(20px, 600);
+      color: $white;
+      text-transform: capitalize;
+    }
+  }
+
+  .important-link {
+    padding-left: 36px;
+    ul {
+      li {
+        margin-bottom: 13px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          color: $footerLinkColor;
+          transition: all linear .2s;
+          text-transform: capitalize;
+
+          i {
+            width: 3px;
+            color: $footerIconColor;
+            transition: all linear .2s;
+          }
+
+          span {
+            padding-left: 10px;
+          }
+
+          &:hover {
+            color: $themeTextColor;
+          }
+
+          &:hover i {
+            color: $themeTextColor;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    ul {
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      li {
+        display: inline-block;
+        color: $footerLinkColor;
+
+        i {
+          @include font(16px, 400);
+          width: 40px;
+        }
+
+        .info {
+          line-height: 26px;
+        }
+      }
+    }
+  }
+  .subscribe{
+    p{
+      color: $footerLinkColor;
+      line-height: 26px;
+      padding-bottom: 24px;
+    }
+    .input-groups{
+      position: relative;
+      input{
+        border-radius: 40px;
+        background-color: #3E525F;
+        border: none;
+        padding: 0 30px;
+        padding-right: 55px;
+        color: $white;
+        height: 45px;
+        @include font(14px, 400);
+        width: 100%;
+      }
+      button{
+        background-color: $themeBgColor;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: $white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 3px;
+      }
+    }
+  }
+}

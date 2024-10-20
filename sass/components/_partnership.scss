@@ -1,0 +1,45 @@
+@import "../variable/bgColor";
+@import "../variable/textColor";
+@import "../mixin/font";
+
+.partnership {
+  padding-top: 80px;
+}
+
+.partnership {
+  padding-top: 60px;
+}
+
+.partnership .partnership-bg {
+  width: 100%;
+  background: #F5F5F5;
+  padding: 50px 0 20px 0;
+}
+
+.partnership .img {
+  margin: 0 12px;
+}
+
+.partnership ul {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.partnership ul li {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.partnership ul li button {
+  font-size: 0;
+  border: 0;
+  background-color: #CECECE;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  transition: all linear .3s;
+}
+
+.partnership ul li.slick-active button {
+  background-color: $themeBgColor;
+}

@@ -1,0 +1,137 @@
+@import "../variable/bgColor";
+@import "../variable/textColor";
+@import "../mixin/font";
+
+.blog {
+  padding-top: 80px;
+
+  .container {
+    position: relative;
+  }
+
+  .blog-item {
+    width: 100%;
+    background-color: $white;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+
+    .image {
+      height: 240px;
+      border-top-right-radius: 6px;
+      border-top-left-radius: 6px;
+      position: relative;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        transition-duration: .5s;
+      }
+
+      ul {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+
+        li.date-icon {
+          width: 50px;
+          height: 50px;
+          background-color: $white;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 50px;
+          display: inline-block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 99;
+          position: relative;
+
+          i {
+            color: $white;
+            @include font(18px, 400);
+            width: 40px;
+            height: 40px;
+            background-color: $themeBgColor;
+            border-radius: 50%;
+            line-height: 40px;
+          }
+        }
+
+        li.date-text {
+          background-color: $white;
+          padding: 6px 14px;
+          color: $paragraphColor;
+          height: auto;
+          border-radius: 40px;
+          position: absolute;
+          top: 8px;
+          left: 31px;
+          min-width: 160px;
+          font-size: 13px;
+          font-weight: 400;
+          z-index: 1;
+          padding-left: 25px;
+        }
+      }
+    }
+
+    .text {
+      padding: 24px;
+
+      h3 {
+        @include font(20px, 600);
+        color: $black;
+        line-height: 26px;
+        transition: all linear .2s;
+      }
+
+      ul {
+        padding: 8px 0 10px 0;
+
+        li {
+          color: $paragraphColor;
+
+          span {
+            color: $black;
+          }
+        }
+      }
+
+      p {
+        color: $paragraphColor;
+        line-height: 26px;
+      }
+    }
+
+    &:hover .text h3 {
+      color: $themeTextColor;
+    }
+
+    &:hover .image img{
+      transform: scale(1.2) rotate(5deg);
+    }
+  }
+
+  .view-more {
+    position: absolute;
+    top: 35px;
+    right: 13px;
+
+    a {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 6px 14px;
+      color: $themeTextColor;
+      border: 1px solid $themeBgColor;
+      transition: all linear .2s;
+
+      &:hover {
+        color: #fff;
+        background-color: #F49A28;
+      }
+    }
+  }
+}

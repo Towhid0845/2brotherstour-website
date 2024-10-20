@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Management</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/bootstrap-icons-1.8.2/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/chosen.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+  <!-- header part start -->
+  <header class="d-none d-xl-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="header-left">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="bi bi-telephone-fill"></i>
+                  <span>01748787485</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-envelope-fill"></i>
+                  <span>info@gmail.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center">
+          <div class="header-right">
+            <ul>
+              <li class="shop-cart cart text-end">
+                <i class="bi bi-cart-check"></i>
+                <sup>20</sup>
+              </li>
+              <li class="select-language">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Language</option>
+                  <option value="1">Bangla</option>
+                  <option value="2">English</option>
+                  <option value="3">France</option>
+                  <option value="3">Japan</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aside-box">
+      <div class="aside-overlay"></div>
+      <aside>
+        <div class="close"><i class="bi bi-x"></i></div>
+        <div class="cart-title">
+          <h3>CART ITEMS - <span>4</span></h3>
+        </div>
+        <div class="cart-body">
+          <div class="product-item">
+            <div class="image">
+              <img src="images/cart-img_01.jpg" alt="cart-img_01" class="img-fluid" width="70">
+            </div>
+            <div class="text">
+              <a href=""> Rorem ipsum dolor sit amet.</a>
+              <span>$19.00</span>
+            </div>
+            <div class="remove">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="image">
+              <img src="images/cart-img_02.jpg" alt="cart-img_02" class="img-fluid" width="70">
+            </div>
+            <div class="text">
+              <a href=""> Rorem ipsum dolor sit amet.</a>
+              <span>$19.00</span>
+            </div>
+            <div class="remove">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="image">
+              <img src="images/cart-img_03.jpg" alt="cart-img_03" class="img-fluid" width="70">
+            </div>
+            <div class="text">
+              <a href=""> Rorem ipsum dolor sit amet.</a>
+              <span>$19.00</span>
+            </div>
+            <div class="remove">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="image">
+              <img src="images/cart-img_04.jpg" alt="cart-img_04" class="img-fluid" width="70">
+            </div>
+            <div class="text">
+              <a href=""> Rorem ipsum dolor sit amet.</a>
+              <span>$19.00</span>
+            </div>
+            <div class="remove">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cart-footer">
+          <div class="footer-title">
+            <ul class="d-flex justify-content-between flex-wrap">
+              <li class="sub-total">SUB TOTAL:</li>
+              <li class="price">$87.00</li>
+            </ul>
+          </div>
+          <div class="footer-button">
+            <ul class="d-flex justify-content-between flex-wrap">
+              <li><a href="">View Cart</a></li>
+              <li><a href="" class="active-button">Checkout</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+  <!-- header part end -->
+  <!-- navbar part start -->
+  <nav class="navbar navbar-expand-lg sticky-top d-none d-xl-block">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="logo">
+        <h4 class="d-inline-block ms-2">2B</h4>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Roberto Tours <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="">Menu One</a></li>
+              <li><a href="">Menu Two</a></li>
+              <li><a href="">Menu Three</a></li>
+              <li><a href="">Menu Four</a></li>
+              <li><a href="">Menu Five</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet consectetur</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Colosseum Tours <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="">Menu One</a></li>
+              <li><a href="">Menu Two</a></li>
+              <li><a href="">Menu Three</a></li>
+              <li><a href="">Menu Four</a></li>
+              <li><a href="">Menu Five</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet consectetur</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Rome City Tours <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="">Menu One</a></li>
+              <li><a href="">Menu Two</a></li>
+              <li><a href="">Menu Three</a></li>
+              <li><a href="">Menu Four</a></li>
+              <li><a href="">Menu Five</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet consectetur</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Other Tours <i class="bi bi-chevron-down"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Special Package Tours <i
+                class="bi bi-chevron-down"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar part end -->
+  <!-- mobile menu part start -->
+  <section class="mobile-menu d-block d-xl-none sticky-top">
+    <div class="mobile-topbar">
+      <div class="container">
+        <div class="topbar-main d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <img src="images/Tour-Logo-PNG.png" alt="Tour-Logo-PNG" class="img-fluid" width="120">
+          </div>
+          <div class="icon">
+            <i class="bi bi-list"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu-main">
+      <div class="close-m-menu"><i class="bi bi-x"></i></div>
+      <div class="menu-body">
+        <div class="action">
+          <ul>
+            <li class="cart d-inline-block"><a href=""><i class="bi bi-basket"></i> <sup>04</sup></a></li>
+            <li class="d-inline-block">
+              <select class="form-select shadow-none" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-list pt-0">
+          <ul>
+            <li class="sub-menu">
+              <a href="#">Home</a>
+            </li>
+            <li class="sub-menu">
+              <a href="#">About Us</a>
+            </li>
+            <li class="sub-menu"><a href="#">Pages <i class="bi bi-chevron-down float-end"></i></a>
+              <ul style="display: none;">
+                <li><a href="">Recipe Menu</a></li>
+                <li><a href="">Reservation Form</a></li>
+                <li><a href="">History</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu"><a href="#">Shop <i class="bi bi-chevron-down float-end"></i></a>
+              <ul style="display: none;">
+                <li><a href="">Shop List</a></li>
+                <li><a href="">Shop Sidebar</a></li>
+                <li><a href="">Shop Details</a></li>
+                <li><a href="">Shop Cart</a></li>
+                <li><a href="">Shop Checkout</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu"><a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- mobile menu part end -->
+
+  <!-- breadcrumb part start -->
+  <section class="bread-crumb">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <div class="page-title">
+            <h4>Checkout</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6 align-self-center">
+          <ul class="text-end">
+            <li><a href="index.html">Home</a></li>
+            <li>Checkout</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- breadcrumb part end -->
+
+  <!-- checkout part start -->
+  <section class="checkout-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="checkout-form">
+            <h4>Billing details</h4>
+            <div class="form-main">
+              <form action="#">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label class="form-label">First name <sup> <i class="fas fa-star"></i>
+                        </sup></label>
+                      <input type="email" class="form-control shadow-none">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label class="form-label">Last name <sup> <i class="fas fa-star"></i>
+                        </sup></label>
+                      <input type="email" class="form-control shadow-none">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label class="form-label">Company name (optional)</label>
+                      <input type="email" class="form-control shadow-none">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label class="form-label">Country / Region <sup> <i class="fas fa-star"></i>
+                        </sup></label>
+                      <select class="form-select shadow-none chosen" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label class="form-label">Street address <sup> <i class="fas fa-star"></i>
+                        </sup></label>
+                      <input type="email" class="form-control shadow-none">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label class="form-label">Town / City <sup> <i class="fas fa-star"></i>
+                        </sup></label>
+                      <input type="email" class="form-control shadow-none">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label class="form-label">State <sup> <i class="fas fa-star"></i>
+                        </sup></label>
+                      <select class="form-select shadow-none chosen" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label class="form-label">ZIP Code <sup> <i class="fas fa-star"></i>
+                        </sup></label>
+                      <input type="email" class="form-control shadow-none">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label class="form-label">Phone <sup> <i class="fas fa-star"></i>
+                        </sup></label>
+                      <input type="email" class="form-control shadow-none">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label class="form-label">Email address <sup> <i class="fas fa-star"></i>
+                        </sup></label>
+                      <input type="email" class="form-control shadow-none">
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="different-add mb-3">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label checkout-hide-show" for="flexCheckDefault">
+                          Ship to a Different Address?
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 different-add-form">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label class="form-label">First name <sup> <i class="fas fa-star"></i>
+                            </sup></label>
+                          <input type="email" class="form-control shadow-none">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label class="form-label">Last name <sup> <i class="fas fa-star"></i>
+                            </sup></label>
+                          <input type="email" class="form-control shadow-none">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label class="form-label">Company name (optional)</label>
+                          <input type="email" class="form-control shadow-none">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label class="form-label">Country / Region <sup> <i class="fas fa-star"></i>
+                            </sup></label>
+                          <select class="form-select shadow-none chosen" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label class="form-label">Street address <sup> <i class="fas fa-star"></i>
+                            </sup></label>
+                          <input type="email" class="form-control shadow-none">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label class="form-label">Town / City <sup> <i class="fas fa-star"></i>
+                            </sup></label>
+                          <input type="email" class="form-control shadow-none">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label class="form-label">State <sup> <i class="fas fa-star"></i>
+                            </sup></label>
+                          <select class="form-select shadow-none chosen" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label class="form-label">ZIP Code <sup> <i class="fas fa-star"></i>
+                            </sup></label>
+                          <input type="email" class="form-control shadow-none">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label class="form-label">Phone <sup> <i class="fas fa-star"></i>
+                            </sup></label>
+                          <input type="email" class="form-control shadow-none">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label class="form-label">Email address <sup> <i class="fas fa-star"></i>
+                            </sup></label>
+                          <input type="email" class="form-control shadow-none">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="mb-3">
+                      <label class="form-label">Order notes (optional)</label>
+                      <textarea rows="4" class="form-control shadow-none"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="checkout-details">
+            <h4>Order Details</h4>
+            <div class="checkout-info">
+              <table class="table table-borderless mb-0">
+                <thead>
+                  <tr>
+                    <th class="text-start ps-0">PRODUCT</th>
+                    <th class="text-end pe-0">TOTAL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="prd-name">Broccoli Crowns <span>(×1)</span></td>
+                    <th class="text-end">$10.00</th>
+                  </tr>
+                  <tr>
+                    <td class="prd-name">Crock Pot Slow Cooker <span>(×1)</span></td>
+                    <th class="text-end">$3.99</th>
+                  </tr>
+                  <tr>
+                    <td class="prd-name">Saute Pan Silver <span>(×1)</span></td>
+                    <th class="text-end">$1.90</th>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th class="ps-0">Subtotal</th>
+                    <th class="text-end pe-0">$15.89</th>
+                  </tr>
+                  <tr>
+                    <th class="ps-0">Total</th>
+                    <th class="total-price text-end pe-0">$15.89</th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <div class="checkout-button text-center">
+            <a href="">Place Your Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- checkout part end -->
+
+  <!-- footer part start -->
+  <div class="progress-wrap active-progress">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+        style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919px, 307.919px; stroke-dashoffset: 30.1071px;">
+      </path>
+    </svg>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!-- col golo add korte hobe -->
+        <div class="col-lg-3 col-md-6">
+          <div class="about">
+            <div class="logo">
+              <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusamus nisi fugit numquam vel,
+                maiores sunt commodi nulla incidunt quaerat!</p>
+              <ul>
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="important-link">
+            <div class="title">
+              <h3>Usefull Links</h3>
+            </div>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>About us</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>Online Enquiry</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>Refund Policy</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>Privacy and Cookies</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>Terms and Conditions</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="contact">
+            <div class="title">
+              <h3>Contact Us</h3>
+            </div>
+            <ul class="d-flex">
+              <li><i class="bi bi-geo-alt-fill"></i></li>
+              <li><span class="info">Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</span></li>
+            </ul>
+            <ul class="d-flex">
+              <li><i class="bi bi-telephone-fill"></i></li>
+              <li><span class="info">01478985968</span></li>
+            </ul>
+            <ul class="d-flex">
+              <li><i class="bi bi-envelope-fill"></i></li>
+              <li><span class="info">info@gmail.com</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="subscribe">
+            <div class="title">
+              <h3>Subscribe Newsletter</h3>
+            </div>
+            <p>Subscribe our newsletter for get new updates.</p>
+            <div class="form">
+              <form action="" method="post">
+                <div class="input-groups">
+                  <input type="email" placeholder="Enter your email...">
+                  <button type="submit"><i class="bi bi-send-fill"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer part end -->
+
+  <!-- footer bottom part start -->
+  <section class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <!-- col golo add korte hobe -->
+        <div class="col-lg-6 col-md-5">
+          <div class="copyright">
+            <p>&copy; 2022 <span>Immigo</span>. All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-7">
+          <div class="branding text-end">
+            <p>
+              Design and Developed By: <a href="#">Nogor Solutions Limited</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer bottom part end -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/chosen.jquery.min.js"></script>
+  <script src="js/back-to-top.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

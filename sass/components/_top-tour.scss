@@ -1,0 +1,67 @@
+@import "../variable/bgColor";
+@import "../variable/textColor";
+@import "../mixin/font";
+
+.top-tour {
+  padding-top: 80px;
+
+  .top-tour-item {
+    margin-bottom: 24px;
+
+    .image {
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        border: 10px;
+        transition-duration: .5s;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.2) rotate(3deg);
+        }
+      }
+
+      p {
+        background-color: $themeBgColor;
+        color: $white;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        border-radius: 40px;
+        padding: 6px 20px;
+        @include font(15px, 400)
+      }
+
+      .overlay {
+        height: 50%;
+        background: linear-gradient(to bottom, transparent, #000000);
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        padding: 30px;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+
+        a {
+          color: $white;
+          @include font(22px, 600);
+        }
+
+        ul {
+          padding-top: 5px;
+
+          li {
+            display: inline-block;
+            cursor: pointer;
+            font-size: 14px;
+            color: $themeTextColor
+          }
+        }
+      }
+    }
+  }
+}

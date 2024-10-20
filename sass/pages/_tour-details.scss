@@ -1,0 +1,453 @@
+@import "../variable/bgColor";
+@import "../variable/textColor";
+@import "../mixin/font";
+
+.tour-details {
+  padding-top: 60px;
+
+  .tour-banner {
+    .tour-slider {
+      width: 100%;
+      height: 500px;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+    }
+
+    ul {
+      position: absolute;
+      bottom: 40px;
+      left: 60px;
+
+      li {
+        display: inline-block;
+        margin: 0 5px;
+
+        button {
+          font-size: 0;
+          width: 14px;
+          height: 14px;
+          background-color: transparent;
+          border: 1px solid $white;
+          border-radius: 50%;
+          transition: all linear .2s;
+        }
+      }
+
+      li.slick-active {
+        button {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  .tour-description {
+    padding-top: 80px;
+
+    .left-sidebar {
+      .title {
+        h2 {
+          font-size: 46px;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding-bottom: 40px;
+
+          span {
+            color: $themeBgColor;
+          }
+        }
+      }
+
+      .info-block {
+        margin-left: 80px;
+        margin-bottom: 50px;
+
+        h4 {
+          font-size: 18px;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin-bottom: 24px;
+          color: $themeBgColor;
+        }
+
+        span {
+          width: 50px;
+          height: 50px;
+          background-color: $themeBgColor;
+          text-align: center;
+          line-height: 50px;
+          border-radius: 50%;
+          font-size: 20px;
+          left: -80px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-weight: 600;
+        }
+
+        ul {
+          li {
+            margin-bottom: 14px;
+            list-style: disc;
+          }
+        }
+
+        p {
+          margin-bottom: 24px;
+        }
+      }
+
+      .info-block:last-child {
+        margin-bottom: 0;
+      }
+
+      .experiance-gallery {
+        .exper-title {
+          border-top: 1px solid #999999;
+          padding-top: 30px;
+          padding-bottom: 40px;
+
+          h3 {
+            font-size: 26px;
+            font-weight: 600;
+          }
+        }
+
+        .image {
+          width: 100%;
+          height: 180px;
+          border-radius: 10px;
+
+          img {
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+          }
+        }
+      }
+
+      .preferable-tour {
+        .pref-title {
+          padding-bottom: 40px;
+
+          h3 {
+            font-size: 26px;
+            font-weight: 600;
+          }
+        }
+
+        .destination-item {
+          box-shadow: 0px 15px 25px 0px #00000014;
+          margin-bottom: 24px;
+          border-bottom-right-radius: 6px;
+          border-bottom-left-radius: 6px;
+
+          .image {
+            width: 100%;
+            height: 220px;
+            border-top-right-radius: 6px;
+            border-top-left-radius: 6px;
+            overflow: hidden;
+
+            img {
+              height: 100%;
+              object-fit: cover;
+              transition-duration: .5s;
+            }
+          }
+
+          &:hover img {
+            transform: scale(1.1) rotate(5deg);
+          }
+
+          .text {
+            min-height: 240px;
+            background-color: $white;
+            width: 100%;
+            border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+            padding: 24px;
+            position: relative;
+
+            p {
+              margin-bottom: 20px
+            }
+
+            h4 {
+              @include font(18px, 600);
+              line-height: 26px;
+              color: $black;
+              transition: all linear .2s;
+            }
+
+            ul {
+              padding-top: 5px;
+
+              li {
+                display: inline-block;
+                cursor: pointer;
+                font-size: 14px;
+                color: $themeTextColor
+              }
+            }
+
+          }
+
+          &:hover {
+            h4 {
+              color: $themeBgColor;
+            }
+          }
+
+          &:hover h3 {
+            color: $themeTextColor;
+          }
+
+          p {
+            color: $paragraphColor;
+            @include font(14px, 400);
+            padding-top: 12px;
+            line-height: 24px;
+            padding-bottom: 30px;
+          }
+
+          h5 {
+            background-color: $darkBgColor;
+            @include font(18px, 600);
+            color: $white;
+            padding: 8px 10px;
+            padding-left: 15px;
+            display: inline-block;
+            margin-top: 10px;
+            position: absolute;
+            bottom: 24px;
+            right: 0;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            transition: all linear .2s;
+          }
+
+          &:hover h5 {
+            background-color: $themeTextColor;
+            padding: 8px 25px;
+          }
+        }
+      }
+    }
+
+    .right-sidebar {
+      .book-tour {
+        width: 100%;
+        background-color: #f5f5f5;
+
+        .heading {
+          padding: 14px;
+          background-color: $themeBgColor;
+        }
+
+        .book-box {
+          padding: 20px;
+
+          .book-info-item {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 30px;
+            padding-top: 20px;
+
+            .info-title {
+              i {
+                color: $themeBgColor;
+                padding-right: 6px;
+                font-size: 16px;
+              }
+
+              p {
+                text-transform: uppercase;
+              }
+
+              button {
+                background-color: $themeBgColor;
+                padding: 3px 10px;
+                border: 0;
+                border-radius: 5px;
+                color: $white;
+                font-size: 14px;
+              }
+            }
+
+
+            .info-body {
+              margin-top: 20px;
+
+              .form-select {
+                box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+                height: 35px;
+                border: 0;
+                font-size: 14px;
+                font-weight: 400;
+              }
+
+              .qnt-main {
+                margin-bottom: 10px;
+              }
+
+              .qnt-main {
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+
+              .qnt-text {
+                text-transform: uppercase;
+              }
+
+              .qnt-num {
+                input {
+                  width: 80px;
+                  height: 35px;
+                  border: 0;
+                  background-color: $white;
+                  text-align: center;
+                  line-height: 35px;
+                  margin: 0 5px;
+                }
+
+                button {
+                  font-size: 20px;
+                  background-color: $white;
+                  width: 35px;
+                  height: 35px;
+                  text-align: center;
+                  line-height: 35px;
+                  border: 0;
+                }
+              }
+            }
+          }
+
+          .book-info-item {
+            &:first-child {
+              padding-top: 0;
+            }
+
+            &:last-child {
+              border-bottom: 0;
+            }
+          }
+        }
+
+        .book-btn {
+          display: flex;
+
+          .total {
+            width: 50%;
+            background-color: $darkBgColor;
+            color: $white;
+            padding: 12px 0px;
+          }
+
+          .book-now {
+            width: 50%;
+            background-color: $themeBgColor;
+            text-align: center;
+            padding: 12px 0;
+
+            a {
+              color: $white;
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      .more-info {
+        margin-top: 30px;
+        width: 100%;
+        background-color: #f5f5f5;
+        padding: 30px;
+
+        ul {
+
+          li {
+            margin-bottom: 30px;
+            position: relative;
+
+
+            .icon {
+              position: absolute;
+              top: 0;
+              left: 0;
+
+              i {
+                width: 60px;
+                height: 60px;
+                background-color: $white;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 60px;
+                font-size: 20px;
+                border: 1px solid #cacaca;
+              }
+            }
+
+            .info {
+              padding-left: 90px;
+
+              h4 {
+                font-size: 18px;
+                font-weight: 600;
+              }
+
+              p {
+                margin-bottom: 5px;
+              }
+
+              i {
+                color: $themeTextColor;
+                margin-right: 5px;
+              }
+            }
+          }
+
+          li:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .notice {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f5f5f5;
+
+        .notice-title {
+          h4 {
+            font-size: 20px;
+            font-weight: 600;
+            border-bottom: 1px solid #cacaca;
+            padding-bottom: 14px;
+          }
+        }
+
+        .notice-main {
+          padding-top: 20px;
+
+          ul {
+            li {
+              margin-bottom: 20px;
+
+              i {
+                font-size: 20px;
+              }
+            }
+
+            li:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

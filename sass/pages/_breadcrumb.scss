@@ -1,0 +1,46 @@
+@import "../variable/bgColor";
+@import "../variable/textColor";
+@import "../mixin/font";
+
+
+.bread-crumb {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #f2f2f2;
+
+  h4 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  ul {
+    li {
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 500;
+      padding-left: 30px;
+      position: relative;
+
+      &::after {
+        width: 9px;
+        height: 9px;
+        position: absolute;
+        top: 7px;
+        right: -18px;
+        border-top: 2px solid $themeBgColor;
+        border-left: 2px solid $themeBgColor;
+        content: "";
+        transform: rotate(136deg);
+      }
+
+      a {
+        color: $themeBgColor;
+      }
+    }
+
+    li:last-child::after {
+      display: none;
+    }
+  }
+
+}

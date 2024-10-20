@@ -1,0 +1,26 @@
+@import "../variable/bgColor";
+@import "../variable/textColor";
+@import "../mixin/font";
+
+.footer-bottom{
+  width: 100%;
+  background-color: $darkBgColor;
+  border-top: 1px solid #576e7f;
+  line-height: 50px;
+  .copyright{
+    p{
+      color: $white;
+      span{
+        color: $themeTextColor;
+      }
+    }
+  }
+  .branding{
+    p{
+      color: $white;
+      a{
+        color: $themeTextColor;
+      }
+    }
+  }
+}

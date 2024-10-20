@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Management</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/bootstrap-icons-1.8.2/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/chosen.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+  <!-- header part start -->
+  <header class="d-none d-xl-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="header-left">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="bi bi-telephone-fill"></i>
+                  <span>01748787485</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-envelope-fill"></i>
+                  <span>info@gmail.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center">
+          <div class="header-right">
+            <ul>
+              <li class="shop-cart cart text-end">
+                <i class="bi bi-cart-check"></i>
+                <sup>20</sup>
+              </li>
+              <li class="select-language">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Language</option>
+                  <option value="1">Bangla</option>
+                  <option value="2">English</option>
+                  <option value="3">France</option>
+                  <option value="3">Japan</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aside-box">
+      <div class="aside-overlay"></div>
+      <aside>
+        <div class="close"><i class="bi bi-x"></i></div>
+        <div class="cart-title">
+          <h3>CART ITEMS - <span>4</span></h3>
+        </div>
+        <div class="cart-body">
+          <div class="product-item">
+            <div class="image">
+              <img src="images/cart-img_01.jpg" alt="cart-img_01" class="img-fluid" width="70">
+            </div>
+            <div class="text">
+              <a href=""> Rorem ipsum dolor sit amet.</a>
+              <span>$19.00</span>
+            </div>
+            <div class="remove">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="image">
+              <img src="images/cart-img_02.jpg" alt="cart-img_02" class="img-fluid" width="70">
+            </div>
+            <div class="text">
+              <a href=""> Rorem ipsum dolor sit amet.</a>
+              <span>$19.00</span>
+            </div>
+            <div class="remove">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="image">
+              <img src="images/cart-img_03.jpg" alt="cart-img_03" class="img-fluid" width="70">
+            </div>
+            <div class="text">
+              <a href=""> Rorem ipsum dolor sit amet.</a>
+              <span>$19.00</span>
+            </div>
+            <div class="remove">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="image">
+              <img src="images/cart-img_04.jpg" alt="cart-img_04" class="img-fluid" width="70">
+            </div>
+            <div class="text">
+              <a href=""> Rorem ipsum dolor sit amet.</a>
+              <span>$19.00</span>
+            </div>
+            <div class="remove">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cart-footer">
+          <div class="footer-title">
+            <ul class="d-flex justify-content-between flex-wrap">
+              <li class="sub-total">SUB TOTAL:</li>
+              <li class="price">$87.00</li>
+            </ul>
+          </div>
+          <div class="footer-button">
+            <ul class="d-flex justify-content-between flex-wrap">
+              <li><a href="">View Cart</a></li>
+              <li><a href="" class="active-button">Checkout</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+  <!-- header part end -->
+  <!-- navbar part start -->
+  <nav class="navbar navbar-expand-lg sticky-top d-none d-xl-block">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="logo">
+        <h4 class="d-inline-block ms-2">2B</h4>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Roberto Tours <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="">Menu One</a></li>
+              <li><a href="">Menu Two</a></li>
+              <li><a href="">Menu Three</a></li>
+              <li><a href="">Menu Four</a></li>
+              <li><a href="">Menu Five</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet consectetur</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Colosseum Tours <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="">Menu One</a></li>
+              <li><a href="">Menu Two</a></li>
+              <li><a href="">Menu Three</a></li>
+              <li><a href="">Menu Four</a></li>
+              <li><a href="">Menu Five</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet consectetur</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Rome City Tours <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="">Menu One</a></li>
+              <li><a href="">Menu Two</a></li>
+              <li><a href="">Menu Three</a></li>
+              <li><a href="">Menu Four</a></li>
+              <li><a href="">Menu Five</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet consectetur</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Other Tours <i class="bi bi-chevron-down"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Special Package Tours <i
+                class="bi bi-chevron-down"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar part end -->
+  <!-- mobile menu part start -->
+  <section class="mobile-menu d-block d-xl-none sticky-top">
+    <div class="mobile-topbar">
+      <div class="container">
+        <div class="topbar-main d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <img src="images/Tour-Logo-PNG.png" alt="Tour-Logo-PNG" class="img-fluid" width="120">
+          </div>
+          <div class="icon">
+            <i class="bi bi-list"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu-main">
+      <div class="close-m-menu"><i class="bi bi-x"></i></div>
+      <div class="menu-body">
+        <div class="action">
+          <ul>
+            <li class="cart d-inline-block"><a href=""><i class="bi bi-basket"></i> <sup>04</sup></a></li>
+            <li class="d-inline-block">
+              <select class="form-select shadow-none" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-list pt-0">
+          <ul>
+            <li class="sub-menu">
+              <a href="#">Home</a>
+            </li>
+            <li class="sub-menu">
+              <a href="#">About Us</a>
+            </li>
+            <li class="sub-menu"><a href="#">Pages <i class="bi bi-chevron-down float-end"></i></a>
+              <ul style="display: none;">
+                <li><a href="">Recipe Menu</a></li>
+                <li><a href="">Reservation Form</a></li>
+                <li><a href="">History</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu"><a href="#">Shop <i class="bi bi-chevron-down float-end"></i></a>
+              <ul style="display: none;">
+                <li><a href="">Shop List</a></li>
+                <li><a href="">Shop Sidebar</a></li>
+                <li><a href="">Shop Details</a></li>
+                <li><a href="">Shop Cart</a></li>
+                <li><a href="">Shop Checkout</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu"><a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- mobile menu part end -->
+
+  <!-- breadcrumb part start -->
+  <section class="bread-crumb">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <div class="page-title">
+            <h4>Tour Details</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6 align-self-center">
+          <ul class="text-end">
+            <li><a href="index.html">Home</a></li>
+            <li>Tour Details</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- breadcrumb part end -->
+
+  <!-- tour details part start -->
+  <section class="tour-details">
+    <div class="container">
+      <div class="tour-banner">
+        <div class="tour-slider" style="background: url(images/tour-banner.jpg);"></div>
+        <div class="tour-slider" style="background: url(images/tour-banner.jpg);"></div>
+        <div class="tour-slider" style="background: url(images/tour-banner.jpg);"></div>
+      </div>
+      <div class="tour-description">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="left-sidebar">
+              <div class="title">
+                <h2>Soneva Jani <span>Maldives</span></h2>
+              </div>
+              <div class="info-block">
+                <div class="info-title position-relative">
+                  <span class="position-absolute">01</span>
+                  <h4>Ticket Details</h4>
+                </div>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                </ul>
+              </div>
+              <div class="info-block">
+                <div class="info-title position-relative">
+                  <span class="position-absolute">02</span>
+                  <h4>Tour Details</h4>
+                </div>
+                <p>Discover the marvels of the Vatican on Vatican Hill Tours. Be mesmerized by Michelangelo’s
+                  world-famous Sistine Chapel and Last Judgement, visit the Raphael Rooms and hear the stories behind
+                  the renowned “School of Athens”. With our Reserved Entrance, you can head straight into the Vatican
+                  to explore the museums with a dedicated expert guide. Headsets allow you to hear the stories your
+                  art historian guide will tell as they bring these works to life. Tours are limited to 20 people, and
+                  the Vatican is quieter than ever. With reduced capacity and fewer crowds, feel like a VIP as you
+                  wander the quiet corridors and explore the museum in peace with your safety as a priority.</p>
+                <p>Inside, your guide will take you out to the Vatican Gardens balcony for your first glimpse of the
+                  dome of St. Peters Basilica before strolling through the ancient statues and modern sculptures of
+                  the Pinecone Courtyard. As there is no talking allowed in the Sistine Chapel your guide will
+                  prepare you here for the many fascinating details you otherwise might miss on your own.</p>
+              </div>
+              <div class="info-block">
+                <div class="info-title position-relative">
+                  <span class="position-absolute">03</span>
+                  <h4>Inclusions</h4>
+                </div>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                </ul>
+              </div>
+              <div class="info-block">
+                <div class="info-title position-relative">
+                  <span class="position-absolute">04</span>
+                  <h4>Additional Info </h4>
+                </div>
+                <ul>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi rerum labore natus sit impedit in
+                    voluptates eveniet molestias repellendus ut.</li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi rerum labore natus sit impedit in
+                    voluptates eveniet molestias repellendus ut.</li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi rerum labore natus sit impedit in
+                    voluptates eveniet molestias repellendus ut.</li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi rerum labore natus sit impedit in
+                    voluptates eveniet molestias repellendus ut.</li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi rerum labore natus sit impedit in
+                    voluptates eveniet molestias repellendus ut.</li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi rerum labore natus sit impedit in
+                    voluptates eveniet molestias repellendus ut.</li>
+                </ul>
+              </div>
+              <div class="experiance-gallery mb-4">
+                <div class="exper-title">
+                  <h3>Top Tour Experience</h3>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 mb-3 col-xl-3">
+                    <div class="image">
+                      <img src="images/exp-image.jpg" alt="exp-image" class="img-fluid w-100">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-3 col-xl-3">
+                    <div class="image">
+                      <img src="images/exp-image.jpg" alt="exp-image" class="img-fluid w-100">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-3 col-xl-3">
+                    <div class="image">
+                      <img src="images/exp-image.jpg" alt="exp-image" class="img-fluid w-100">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-3 col-xl-3">
+                    <div class="image">
+                      <img src="images/exp-image.jpg" alt="exp-image" class="img-fluid w-100">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-3 col-xl-3">
+                    <div class="image">
+                      <img src="images/exp-image.jpg" alt="exp-image" class="img-fluid w-100">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-3 col-xl-3">
+                    <div class="image">
+                      <img src="images/exp-image.jpg" alt="exp-image" class="img-fluid w-100">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-3 col-xl-3">
+                    <div class="image">
+                      <img src="images/exp-image.jpg" alt="exp-image" class="img-fluid w-100">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-3 col-xl-3">
+                    <div class="image">
+                      <img src="images/exp-image.jpg" alt="exp-image" class="img-fluid w-100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="preferable-tour">
+                <div class="pref-title">
+                  <h3>Preferable Tour</h3>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-xl-4 col-md-6">
+                    <a href="" class="d-block w-100">
+                      <div class="destination-item">
+                        <div class="image">
+                          <img src="images/about-image-1.jpg" alt="about-image-1" class="img-fluie w-100">
+                        </div>
+                        <div class="text">
+                          <h4>Colossem Regular Tours</h4>
+                          <ul>
+                            <li><i class="bi bi-star-fill"></i> <span>5</span> <span>(50)</span></li>
+                          </ul>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, libero?</p>
+                          <h5>$30</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-6 col-xl-4 col-md-6">
+                    <a href="" class="d-block w-100">
+                      <div class="destination-item">
+                        <div class="image">
+                          <img src="images/about-image-2.jpg" alt="about-image-2" class="img-fluie w-100">
+                        </div>
+                        <div class="text">
+                          <h4>Colossem Regular Tours</h4>
+                          <ul>
+                            <li><i class="bi bi-star-fill"></i> <span>5</span> <span>(50)</span></li>
+                          </ul>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, libero?</p>
+                          <h5>$30</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-6 col-xl-4 col-md-6">
+                    <a href="" class="d-block w-100">
+                      <div class="destination-item">
+                        <div class="image">
+                          <img src="images/about-image-3.jpg" alt="about-image-3" class="img-fluie w-100">
+                        </div>
+                        <div class="text">
+                          <h4>Colossem Regular Tours</h4>
+                          <ul>
+                            <li><i class="bi bi-star-fill"></i> <span>5</span> <span>(50)</span></li>
+                          </ul>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, libero?</p>
+                          <h5>$30</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-6 col-xl-4 col-md-6">
+                    <a href="" class="d-block w-100">
+                      <div class="destination-item">
+                        <div class="image">
+                          <img src="images/about-image-4.jpg" alt="about-image-4" class="img-fluie w-100">
+                        </div>
+                        <div class="text">
+                          <h4>Colossem Regular Tours</h4>
+                          <ul>
+                            <li><i class="bi bi-star-fill"></i> <span>5</span> <span>(50)</span></li>
+                          </ul>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, libero?</p>
+                          <h5>$30</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-6 col-xl-4 col-md-6">
+                    <a href="" class="d-block w-100">
+                      <div class="destination-item">
+                        <div class="image">
+                          <img src="images/about-image-1.jpg" alt="about-image-1" class="img-fluie w-100">
+                        </div>
+                        <div class="text">
+                          <h4>Colossem Regular Tours</h4>
+                          <ul>
+                            <li><i class="bi bi-star-fill"></i> <span>5</span> <span>(50)</span></li>
+                          </ul>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, libero?</p>
+                          <h5>$30</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-6 col-xl-4 col-md-6">
+                    <a href="" class="d-block w-100">
+                      <div class="destination-item">
+                        <div class="image">
+                          <img src="images/about-image-2.jpg" alt="about-image-2" class="img-fluie w-100">
+                        </div>
+                        <div class="text">
+                          <h4>Colossem Regular Tours</h4>
+                          <ul>
+                            <li><i class="bi bi-star-fill"></i> <span>5</span> <span>(50)</span></li>
+                          </ul>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, libero?</p>
+                          <h5>$30</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="right-sidebar">
+              <div class="book-tour">
+
+
+                <div class="heading text-center">
+                  <h4>- Book Your Tour -</h4>
+                </div>
+                <div class="book-box">
+                  <div class="book-info-item">
+                    <div class="info-title position-relative">
+                      <p><i class="bi bi-ticket-perforated-fill"></i> <span>Tour Type</span></p>
+                      <button class="position-absolute top-0 end-0">Ok</button>
+                    </div>
+                    <div class="info-body">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="book-info-item">
+                    <div class="info-title position-relative">
+                      <p><i class="bi bi-collection-fill"></i> <span>Your Group</span></p>
+                      <button class="position-absolute top-0 end-0">Ok</button>
+                    </div>
+                    <div class="info-body">
+                      <div class="qnt-main d-flex justify-content-between">
+                        <div class="qnt-text">
+                          <span class="d-block">Adult</span>
+                          <span class="d-block">$83</span>
+                        </div>
+                        <div class="qnt-num">
+                          <button>-</button>
+                          <input type="text" readonly="readonly" value="2">
+                          <button>+</button>
+                        </div>
+                      </div>
+                      <div class="qnt-main d-flex justify-content-between">
+                        <div class="qnt-text">
+                          <span class="d-block">Adult</span>
+                          <span class="d-block">$83</span>
+                        </div>
+                        <div class="qnt-num">
+                          <button>-</button>
+                          <input type="text" readonly="readonly" value="2">
+                          <button>+</button>
+                        </div>
+                      </div>
+                      <div class="qnt-main d-flex justify-content-between">
+                        <div class="qnt-text">
+                          <span class="d-block">Adult</span>
+                          <span class="d-block">$83</span>
+                        </div>
+                        <div class="qnt-num">
+                          <button>-</button>
+                          <input type="text" readonly="readonly" value="2">
+                          <button>+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="book-info-item">
+                    <div class="info-title position-relative">
+                      <p><i class="bi bi-calendar2-week"></i> <span>Your Date</span></p>
+                      <button class="position-absolute top-0 end-0">Ok</button>
+                    </div>
+                    <div class="info-body">
+                      <input type="date" class="form-control shadow-none">
+                    </div>
+                  </div>
+                  <div class="book-info-item">
+                    <div class="info-title position-relative">
+                      <p><i class="bi bi-stopwatch"></i> <span>Tour Time</span></p>
+                      <button class="position-absolute top-0 end-0">Ok</button>
+                    </div>
+                    <div class="info-body">
+                      <div class="form-check">
+                        <input class="form-check-input shadow-none" type="radio" name="exampleRadios"
+                          id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                          11.00 AM
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input shadow-none" type="radio" name="exampleRadios"
+                          id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                          11.00 AM
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="book-info-item">
+                    <div class="info-title position-relative">
+                      <p><i class="bi bi-stopwatch"></i> <span>Tour Language</span></p>
+                      <button class="position-absolute top-0 end-0">Ok</button>
+                    </div>
+                    <div class="info-body">
+                      <div class="form-check">
+                        <input class="form-check-input shadow-none" type="radio" name="exampleRadios"
+                          id="exampleRadios12" value="option12" checked>
+                        <label class="form-check-label" for="exampleRadios12">
+                          English
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input shadow-none" type="radio" name="exampleRadios"
+                          id="exampleRadios13" value="option13">
+                        <label class="form-check-label" for="exampleRadios13">
+                          Bangla
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input shadow-none" type="radio" name="exampleRadios"
+                          id="exampleRadios14" value="option14">
+                        <label class="form-check-label" for="exampleRadios14">
+                          Hindi
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="book-btn">
+                  <div class="total text-center">
+                    Total -
+                    <span class="price fs-5 fw-bold">$166</span>
+                  </div>
+                  <div class="book-now">
+                    <a href="">Add to Cart</a>
+                  </div>
+                </div>
+                <!-- 
+                <div class="book-box">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <label for=""><i class="bi bi-calendar3"></i> Date</label>
+                      <div class="input-groups mt-2">
+                        <input type="date" class="form-control shadow-none">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <label for=""><i class="bi bi-stopwatch"></i> Time</label>
+                      <div class="input-groups mt-2">
+                        <input type="time" class="form-control shadow-none">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="count-box mt-4">
+                    <div class="row">
+                      <div class="col-lg-6 col-sm-6">
+                        <span>Adults</span>
+                        <div class="qnt-number mt-2 d-flex">
+                          <button class="cart-minus"><i class="bi bi-dash"></i></button>
+                          <input class="cart-input" type="text" value="0">
+                          <button class="cart-plus"><i class="bi bi-plus"></i></button>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-6">
+                        <span>Childres</span>
+                        <div class="qnt-number mt-2 d-flex">
+                          <button class="cart-minus"><i class="bi bi-dash"></i></button>
+                          <input class="cart-input" type="text" value="0">
+                          <button class="cart-plus"><i class="bi bi-plus"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="table mt-3">
+                    <tbody>
+                      <tr>
+                        <td>Adults </td>
+                        <td class="text-end">2</td>
+                      </tr>
+                      <tr>
+                        <td>Children </td>
+                        <td class="text-end">0</td>
+                      </tr>
+                      <tr>
+                        <td>Total amount </td>
+                        <td class="text-end"><span>3x</span> $52 </td>
+                      </tr>
+                      <tr>
+                        <th>Total amount </th>
+                        <th class="text-end">$154 </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="book-btn">
+                    <a href="">Book now</a>
+                  </div>
+                </div> -->
+              </div>
+
+              <div class="more-info">
+                <ul>
+                  <li>
+                    <div class="icon">
+                      <i class="bi bi-stopwatch"></i>
+                    </div>
+                    <div class="info">
+                      <h4 class="mb-2">Start Times</h4>
+                      <p><i class="bi bi-calendar3"></i> Tue 02 2022</p>
+                      <p><i class="bi bi-clock-history"></i> 11:00 AM</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <i class="bi bi-stopwatch"></i>
+                    </div>
+                    <div class="info">
+                      <h4 class="mb-2">Start Times</h4>
+                      <p><i class="bi bi-calendar3"></i> Tue 02 2022</p>
+                      <p><i class="bi bi-clock-history"></i> 11:00 AM</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <i class="bi bi-stopwatch"></i>
+                    </div>
+                    <div class="info">
+                      <h4 class="mb-2">Start Times</h4>
+                      <p><i class="bi bi-calendar3"></i> Tue 02 2022</p>
+                      <p><i class="bi bi-clock-history"></i> 11:00 AM</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="notice">
+                <div class="notice-title">
+                  <h4>Notice</h4>
+                </div>
+                <div class="notice-main">
+                  <ul>
+                    <li>
+                      <i class="bi bi-check-circle-fill me-2"></i>
+                      Please make sure maintain your dress code for professional tours while you visit Vatican
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill me-2"></i>
+                      Please make sure maintain your dress code for professional tours while you visit Vatican
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill me-2"></i>
+                      Please make sure maintain your dress code for professional tours while you visit Vatican
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- tour details part end -->
+
+  <!-- footer part start -->
+  <div class="progress-wrap active-progress">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+        style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919px, 307.919px; stroke-dashoffset: 30.1071px;">
+      </path>
+    </svg>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!-- col golo add korte hobe -->
+        <div class="col-lg-3 col-md-6">
+          <div class="about">
+            <div class="logo">
+              <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusamus nisi fugit numquam vel,
+                maiores sunt commodi nulla incidunt quaerat!</p>
+              <ul>
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="important-link">
+            <div class="title">
+              <h3>Usefull Links</h3>
+            </div>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>About us</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>Online Enquiry</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>Refund Policy</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>Privacy and Cookies</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>Terms and Conditions</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="contact">
+            <div class="title">
+              <h3>Contact Us</h3>
+            </div>
+            <ul class="d-flex">
+              <li><i class="bi bi-geo-alt-fill"></i></li>
+              <li><span class="info">Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</span></li>
+            </ul>
+            <ul class="d-flex">
+              <li><i class="bi bi-telephone-fill"></i></li>
+              <li><span class="info">01478985968</span></li>
+            </ul>
+            <ul class="d-flex">
+              <li><i class="bi bi-envelope-fill"></i></li>
+              <li><span class="info">info@gmail.com</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="subscribe">
+            <div class="title">
+              <h3>Subscribe Newsletter</h3>
+            </div>
+            <p>Subscribe our newsletter for get new updates.</p>
+            <div class="form">
+              <form action="" method="post">
+                <div class="input-groups">
+                  <input type="email" placeholder="Enter your email...">
+                  <button type="submit"><i class="bi bi-send-fill"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer part end -->
+
+  <!-- footer bottom part start -->
+  <section class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <!-- col golo add korte hobe -->
+        <div class="col-lg-6 col-md-5">
+          <div class="copyright">
+            <p>&copy; 2022 <span>Immigo</span>. All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-7">
+          <div class="branding text-end">
+            <p>
+              Design and Developed By: <a href="#">Nogor Solutions Limited</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer bottom part end -->
+
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/chosen.jquery.min.js"></script>
+  <script src="js/back-to-top.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

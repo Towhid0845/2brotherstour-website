@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Management</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/bootstrap-icons-1.8.2/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/chosen.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+  <!-- header part start -->
+  <header class="d-none d-xl-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="header-left">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="bi bi-telephone-fill"></i>
+                  <span>01748787485</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-envelope-fill"></i>
+                  <span>info@gmail.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center">
+          <div class="header-right">
+            <ul>
+              <li class="shop-cart cart text-end">
+                <i class="bi bi-cart-check"></i>
+                <sup>20</sup>
+              </li>
+              <li class="select-language">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Language</option>
+                  <option value="1">Bangla</option>
+                  <option value="2">English</option>
+                  <option value="3">France</option>
+                  <option value="3">Japan</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aside-box">
+      <div class="aside-overlay"></div>
+      <aside>
+        <div class="close"><i class="bi bi-x"></i></div>
+        <div class="cart-title">
+          <h3>CART ITEMS - <span>4</span></h3>
+        </div>
+        <div class="cart-body">
+          <div class="product-item">
+            <div class="image">
+              <img src="images/cart-img_01.jpg" alt="cart-img_01" class="img-fluid" width="70">
+            </div>
+            <div class="text">
+              <a href=""> Rorem ipsum dolor sit amet.</a>
+              <span>$19.00</span>
+            </div>
+            <div class="remove">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="image">
+              <img src="images/cart-img_02.jpg" alt="cart-img_02" class="img-fluid" width="70">
+            </div>
+            <div class="text">
+              <a href=""> Rorem ipsum dolor sit amet.</a>
+              <span>$19.00</span>
+            </div>
+            <div class="remove">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="image">
+              <img src="images/cart-img_03.jpg" alt="cart-img_03" class="img-fluid" width="70">
+            </div>
+            <div class="text">
+              <a href=""> Rorem ipsum dolor sit amet.</a>
+              <span>$19.00</span>
+            </div>
+            <div class="remove">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="image">
+              <img src="images/cart-img_04.jpg" alt="cart-img_04" class="img-fluid" width="70">
+            </div>
+            <div class="text">
+              <a href=""> Rorem ipsum dolor sit amet.</a>
+              <span>$19.00</span>
+            </div>
+            <div class="remove">
+              <i class="bi bi-x"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cart-footer">
+          <div class="footer-title">
+            <ul class="d-flex justify-content-between flex-wrap">
+              <li class="sub-total">SUB TOTAL:</li>
+              <li class="price">$87.00</li>
+            </ul>
+          </div>
+          <div class="footer-button">
+            <ul class="d-flex justify-content-between flex-wrap">
+              <li><a href="">View Cart</a></li>
+              <li><a href="" class="active-button">Checkout</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+  <!-- header part end -->
+  <!-- navbar part start -->
+  <nav class="navbar navbar-expand-lg sticky-top d-none d-xl-block">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="logo">
+        <h4 class="d-inline-block ms-2">2B</h4>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Roberto Tours <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="">Menu One</a></li>
+              <li><a href="">Menu Two</a></li>
+              <li><a href="">Menu Three</a></li>
+              <li><a href="">Menu Four</a></li>
+              <li><a href="">Menu Five</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet consectetur</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Colosseum Tours <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="">Menu One</a></li>
+              <li><a href="">Menu Two</a></li>
+              <li><a href="">Menu Three</a></li>
+              <li><a href="">Menu Four</a></li>
+              <li><a href="">Menu Five</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet consectetur</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Rome City Tours <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="">Menu One</a></li>
+              <li><a href="">Menu Two</a></li>
+              <li><a href="">Menu Three</a></li>
+              <li><a href="">Menu Four</a></li>
+              <li><a href="">Menu Five</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet consectetur</a></li>
+              <li><a href="">Lorem ipsum dolor sit amet</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Other Tours <i class="bi bi-chevron-down"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Special Package Tours <i
+                class="bi bi-chevron-down"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar part end -->
+  <!-- mobile menu part start -->
+  <section class="mobile-menu d-block d-xl-none sticky-top">
+    <div class="mobile-topbar">
+      <div class="container">
+        <div class="topbar-main d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <img src="images/Tour-Logo-PNG.png" alt="Tour-Logo-PNG" class="img-fluid" width="120">
+          </div>
+          <div class="icon">
+            <i class="bi bi-list"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu-main">
+      <div class="close-m-menu"><i class="bi bi-x"></i></div>
+      <div class="menu-body">
+        <div class="action">
+          <ul>
+            <li class="cart d-inline-block"><a href=""><i class="bi bi-basket"></i> <sup>04</sup></a></li>
+            <li class="d-inline-block">
+              <select class="form-select shadow-none" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-list pt-0">
+          <ul>
+            <li class="sub-menu">
+              <a href="#">Home</a>
+            </li>
+            <li class="sub-menu">
+              <a href="#">About Us</a>
+            </li>
+            <li class="sub-menu"><a href="#">Pages <i class="bi bi-chevron-down float-end"></i></a>
+              <ul style="display: none;">
+                <li><a href="">Recipe Menu</a></li>
+                <li><a href="">Reservation Form</a></li>
+                <li><a href="">History</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu"><a href="#">Shop <i class="bi bi-chevron-down float-end"></i></a>
+              <ul style="display: none;">
+                <li><a href="">Shop List</a></li>
+                <li><a href="">Shop Sidebar</a></li>
+                <li><a href="">Shop Details</a></li>
+                <li><a href="">Shop Cart</a></li>
+                <li><a href="">Shop Checkout</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu"><a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- mobile menu part end -->
+
+  <!-- breadcrumb part start -->
+  <section class="bread-crumb">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <div class="page-title">
+            <h4>Content page</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6 align-self-center">
+          <ul class="text-end">
+            <li><a href="index.html">Home</a></li>
+            <li>Content page</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- breadcrumb part end -->
+
+  <!-- content page start -->
+  <section class="content-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="image"
+            style="background: url(images/content-page-layout-image-2.png);background-repeat: no-repeat; background-position: center; background-size: cover;">
+            <div class="overlay p-5 d-flex align-items-end">
+              <div class="text">
+                <h1 class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores animi possimus
+                  dolor aspernatur nostrum atque reiciendis assumenda nulla</h1>
+                <span>February 9, 2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="details">
+            <p class="pt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, excepturi ut autem
+              esse perspiciatis cumque voluptatum expedita quis ratione ad incidunt necessitatibus dolor. Eligendi eos
+              vero dolore eveniet perferendis veniam dolor ut nihil tempore, eum ex illum dolorum, id cupiditate harum
+              voluptatem similique deserunt, et pariatur molestias earum illo. Esse facilis nobis consectetur, unde
+              temporibus iure quia magnam in, itaque rerum alias sint consequatur vitae autem. Laborum sed minima fugit
+              excepturi, aut cum? Cupiditate consectetur nam quidem sapiente aut incidunt minima, sunt saepe veniam at
+              animi et laboriosam mollitia nisi consequuntur autem, ipsam nobis voluptas beatae fugit? Facilis a dolor
+              neque modi debitis esse illum architecto alias in cumque error adipisci corporis aliquam obcaecati at,
+              temporibus porro! Vero doloremque quis assumenda inventore perspiciatis. Necessitatibus ut voluptatum odio
+              illo corporis architecto exercitationem aliquam maxime ipsum sequi dolor perspiciatis tempore laboriosam
+              enim perferendis, sapiente, commodi ratione at accusamus ex nam? Consectetur ad laboriosam laudantium?
+              Architecto eveniet nostrum modi illum nam qui itaque quam deserunt porro explicabo impedit mollitia
+              molestiae repudiandae, enim fugit animi aspernatur voluptate obcaecati nulla expedita quidem. Incidunt,
+              perspiciatis aperiam soluta voluptates iste corporis mollitia vel minus eum, consequatur architecto
+              officia quas quae maiores aliquid at ratione earum! Ut culpa deleniti distinctio reprehenderit sed
+              recusandae inventore rem illum, vel doloremque dignissimos sunt error, laborum corporis rerum neque atque
+              voluptatum. Unde est optio quo cupiditate pariatur quod voluptatibus assumenda dolores ratione ad quas ab
+              suscipit, vero facere totam dolore! Repellendus possimus id laudantium repudiandae, laborum officiis ipsa
+              dolorem, tempora aperiam sit quidem. Laborum veniam reprehenderit maxime corrupti neque fugit at
+              voluptatibus corporis, ipsam optio nam, eius, deleniti repudiandae et explicabo? Illum numquam natus
+              aperiam voluptatum modi odit, quibusdam tenetur laudantium excepturi quasi, recusandae consectetur amet
+              quos praesentium quae corrupti maiores adipisci nostrum harum nobis dolor repellendus, atque error
+              ratione! Quod, minima.</p>
+            <div class="mid-shape">
+              <span><i class="bi bi-quote"></i></span>
+              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, asperiores animi dignissimos maiores
+                ut eligendi hic consequatur odit sint ratione similique dolorum, quidem reprehenderit quae quia quaerat
+                eius architecto minima.
+              </h4>
+            </div>
+            <p class="pt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, excepturi ut autem
+              esse perspiciatis cumque voluptatum expedita quis ratione ad incidunt necessitatibus dolor. Eligendi eos
+              vero dolore eveniet perferendis veniam dolor ut nihil tempore, eum ex illum dolorum, id cupiditate harum
+              voluptatem similique deserunt, et pariatur molestias earum illo. Esse facilis nobis consectetur, unde
+              temporibus iure quia magnam in, itaque rerum alias sint consequatur vitae autem. Laborum sed minima fugit
+              excepturi, aut cum? Cupiditate consectetur nam quidem sapiente aut incidunt minima, sunt saepe veniam at
+              animi et laboriosam mollitia nisi consequuntur autem, ipsam nobis voluptas beatae fugit? Facilis a dolor
+              neque modi debitis esse illum architecto alias in cumque error adipisci corporis aliquam obcaecati at,
+              temporibus porro! Vero doloremque quis assumenda inventore perspiciatis. Necessitatibus ut voluptatum odio
+              illo corporis architecto exercitationem aliquam maxime ipsum sequi dolor perspiciatis tempore laboriosam
+              enim perferendis, sapiente, commodi ratione at accusamus ex nam? Consectetur ad laboriosam laudantium?
+              Architecto eveniet nostrum modi illum nam qui itaque quam deserunt porro explicabo impedit mollitia
+              molestiae repudiandae, enim fugit animi aspernatur voluptate obcaecati nulla expedita quidem. Incidunt,
+              perspiciatis aperiam soluta voluptates iste corporis mollitia vel minus eum, consequatur architecto
+              officia quas quae maiores aliquid at ratione earum! Ut culpa deleniti distinctio reprehenderit sed
+              recusandae inventore rem illum, vel doloremque dignissimos sunt error, laborum corporis rerum neque atque
+              voluptatum. Unde est optio quo cupiditate pariatur quod voluptatibus assumenda dolores ratione ad quas ab
+              suscipit, vero facere totam dolore! Repellendus possimus id laudantium repudiandae, laborum officiis ipsa
+              dolorem, tempora aperiam sit quidem. Laborum veniam reprehenderit maxime corrupti neque fugit at
+              voluptatibus corporis, ipsam optio nam, eius, deleniti repudiandae et explicabo? Illum numquam natus
+              aperiam voluptatum modi odit, quibusdam tenetur laudantium excepturi quasi, recusandae consectetur amet
+              quos praesentium quae corrupti maiores adipisci nostrum harum nobis dolor repellendus, atque error
+              ratione! Quod, minima.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- content page end -->
+  <!-- footer part start -->
+  <div class="progress-wrap active-progress">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+        style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919px, 307.919px; stroke-dashoffset: 30.1071px;">
+      </path>
+    </svg>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!-- col golo add korte hobe -->
+        <div class="col-lg-3 col-md-6">
+          <div class="about">
+            <div class="logo">
+              <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusamus nisi fugit numquam vel,
+                maiores sunt commodi nulla incidunt quaerat!</p>
+              <ul>
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="important-link">
+            <div class="title">
+              <h3>Usefull Links</h3>
+            </div>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>About us</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>Online Enquiry</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>Refund Policy</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>Privacy and Cookies</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-dot"></i>
+                  <i class="bi bi-dot"></i>
+                  <span>Terms and Conditions</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="contact">
+            <div class="title">
+              <h3>Contact Us</h3>
+            </div>
+            <ul class="d-flex">
+              <li><i class="bi bi-geo-alt-fill"></i></li>
+              <li><span class="info">Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</span></li>
+            </ul>
+            <ul class="d-flex">
+              <li><i class="bi bi-telephone-fill"></i></li>
+              <li><span class="info">01478985968</span></li>
+            </ul>
+            <ul class="d-flex">
+              <li><i class="bi bi-envelope-fill"></i></li>
+              <li><span class="info">info@gmail.com</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="subscribe">
+            <div class="title">
+              <h3>Subscribe Newsletter</h3>
+            </div>
+            <p>Subscribe our newsletter for get new updates.</p>
+            <div class="form">
+              <form action="" method="post">
+                <div class="input-groups">
+                  <input type="email" placeholder="Enter your email...">
+                  <button type="submit"><i class="bi bi-send-fill"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer part end -->
+
+  <!-- footer bottom part start -->
+  <section class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <!-- col golo add korte hobe -->
+        <div class="col-lg-6 col-md-5">
+          <div class="copyright">
+            <p>&copy; 2022 <span>Immigo</span>. All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-7">
+          <div class="branding text-end">
+            <p>
+              Design and Developed By: <a href="#">Nogor Solutions Limited</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer bottom part end -->
+
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/chosen.jquery.min.js"></script>
+  <script src="js/back-to-top.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
